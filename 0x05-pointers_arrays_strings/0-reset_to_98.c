@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * resat_to_98 - this function update value
+ * reset_to_98 - this function update value
  *
- * @*n: pointer value
+ * @n: pointer value
  *
  * Return: 0
  */
