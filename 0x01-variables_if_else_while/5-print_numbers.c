@@ -3,7 +3,7 @@
 /**
  * main - this function will print all single difgit
  *
- * Rturn: 0
+ * Return: 0
  */
 
 int main(void)
