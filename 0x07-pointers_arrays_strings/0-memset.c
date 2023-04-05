@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * this function fills memory whith a constante byte
+ * _memset - this function fills memory whith a constante byte
  *
  * @s: parameter 1
  * @b: parameter 2
