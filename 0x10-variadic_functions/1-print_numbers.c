@@ -3,10 +3,10 @@
 #include "variadic_functions.h"
 
 /**
- * print_number - print number
+ * print_numbers - print number
  *
  * @separator: the string to be printed
- * @: number of integer
+ * @n: number of integer
  *
  * Return: 0
  */
