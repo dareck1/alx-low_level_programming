@@ -1,1 +1,0 @@
-Strucrure Typedef
