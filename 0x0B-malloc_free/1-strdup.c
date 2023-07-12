@@ -14,12 +14,12 @@
 char *_strdup(char *str)
 {
 	char *s;
-	unsigned int len;	
+	size_t len;	
 	if (str == NULL)
 		return (NULL);
 	len = strlen(str) + 1;
 	s = malloc(len * sizeof(char));
 	if (s != NULL)
-		memcpy(s, str);
+		memcpy(s, str, len);
 	return (s);
 }
