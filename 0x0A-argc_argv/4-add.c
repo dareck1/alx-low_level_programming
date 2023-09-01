@@ -18,7 +18,10 @@ int main(int argc, char **argv)
 
 	add = 0;
 	if (argc == 1)
+	{
 		printf("%d\n", 0);
+		return (0);
+	}
 	for (i = 0; i < argc - 1; i++)
 	{
 		for (j = 0; j < argv[i][j]; j++)
