@@ -1,8 +1,9 @@
 #include "main.h"
 #include <stdlib.h>
+#include <string.h>
 
 /**
- * _strdup - function that returns a pointer to a newly allocated space in memory,
+ * _strdup - function that returns a pointer to a newly memory
  *
  * @str: string
  *
@@ -12,16 +13,11 @@
 char *_strdup(char *str)
 {
 	char *s;
-	size_t len = 0;
-	
+	size_t len;
+
 	if (str == NULL)
 		return (NULL);
-	while (!str)
-	{
-		len++;
-		str++;
-	}
-	len += 1;
+	len = strlen(str) + 1;
 	s = malloc(sizeof(char));
 	if (s != NULL)
 		memcpy(s, str, len);
