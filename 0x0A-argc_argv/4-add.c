@@ -14,7 +14,7 @@
 int main(int argc, char **argv)
 {
 	int add;
-	int i,j;
+	int i, j;
 
 	add = 0;
 	if (argc == 1)
@@ -22,9 +22,9 @@ int main(int argc, char **argv)
 		printf("%d\n", 0);
 		return (0);
 	}
-	for (i = 0; i < argc - 1; i++)
+	for (i = 1; i < argc; i++)
 	{
-		for (j = 0; j < argv[i][j]; j++)
+		for (j = 0; argv[i][j] != '\0'; j++)
 		{
 			if (!isdigit(argv[i][j]))
 			{
@@ -32,7 +32,7 @@ int main(int argc, char **argv)
 				return (1);
 			}
 		}
-	add = add + atoi(argv[i]);
+		add = add + atoi(argv[i]);
 	}
 	printf("%d\n", add);
 	return (0);
