@@ -3,7 +3,7 @@
 /**
  * main - program that prints the name of the fil
  *
- * Return: 
+ * Return: 0
  */
 
 int main(void)
