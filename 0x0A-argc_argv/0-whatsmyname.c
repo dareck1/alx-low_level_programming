@@ -6,7 +6,7 @@
  * @argc: argument number
  * @argv: string
  *
- * Return (0);
+ * Return: (0);
  */
 
 int main(int argc, char **argv)
