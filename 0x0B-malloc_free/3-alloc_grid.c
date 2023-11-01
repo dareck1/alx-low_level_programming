@@ -25,18 +25,17 @@ int **alloc_grid(int width, int height)
 		tab2d[i] = (int *)malloc(sizeof(int *) * width);
 		if (tab2d[i] == NULL)
 		{
-			for (j = 0; j < height; j++)
+			for (j = 0; j < i; j++)
 			{
 				free(tab2d[j]);
 			}
 			free(tab2d);
 			return (NULL);
 		}
-	}
-	for (i = 0; i < height; i++)
-	{
 		for (j = 0; j < width; j++)
+		{
 			tab2d[i][j] = 0;
+		}
 	}
 	return (tab2d);
 }
